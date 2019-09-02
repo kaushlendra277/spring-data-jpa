@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "954526f8-bdc1-4b09-813b-fd130fa4553b",
+		"name": "master",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Topics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endPoint}}/topics/all",
+					"host": [
+						"{{endPoint}}"
+					],
+					"path": [
+						"topics",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Topic by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endPoint}}/topics/Spring Framework",
+					"host": [
+						"{{endPoint}}"
+					],
+					"path": [
+						"topics",
+						"Spring Framework"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
