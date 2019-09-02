@@ -1,78 +1,218 @@
 {
 	"info": {
 		"_postman_id": "954526f8-bdc1-4b09-813b-fd130fa4553b",
-		"name": "master",
+		"name": "cource-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Get All Topics",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{endPoint}}/topics/all",
-					"host": [
-						"{{endPoint}}"
-					],
-					"path": [
-						"topics",
-						"all"
-					]
+			"name": "Topics",
+			"item": [
+				{
+					"name": "Get All Topics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endPoint}}/topics/all",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Topic by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endPoint}}/topics/3",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Topic",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"2\",\r\n    \"name\": \"Java2\",\r\n    \"description\": \"Java2 Description\"\r\n}"
+						},
+						"url": {
+							"raw": "{{endPoint}}/topics",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Topic",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"3\",\r\n    \"name\": \"Java3-new\",\r\n    \"description\": \"Java3 Description-new\"\r\n}"
+						},
+						"url": {
+							"raw": "{{endPoint}}/topics",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete topic",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endPoint}}/topics/3",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics",
+								"3"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Get Topic by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{endPoint}}/topics/Spring Framework",
-					"host": [
-						"{{endPoint}}"
-					],
-					"path": [
-						"topics",
-						"Spring Framework"
-					]
+			"name": "cources",
+			"item": [
+				{
+					"name": "Add Cources",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"2\",\r\n    \"name\": \"collecion2\",\r\n    \"description\": \"collecion2 Description\"\r\n}"
+						},
+						"url": {
+							"raw": "{{endPoint}}/topics/2/courses",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics",
+								"2",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Courses By Topic Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endPoint}}/topics/2/courses",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics",
+								"2",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cource By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endPoint}}/topics/1/courses/1",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics",
+								"1",
+								"courses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cource By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endPoint}}/topics/1/courses/2",
+							"host": [
+								"{{endPoint}}"
+							],
+							"path": [
+								"topics",
+								"1",
+								"courses",
+								"2"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "Add Topic",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": ""
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Topic",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": ""
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete topic",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": ""
-				}
-			},
-			"response": []
+			]
 		}
 	]
 }
